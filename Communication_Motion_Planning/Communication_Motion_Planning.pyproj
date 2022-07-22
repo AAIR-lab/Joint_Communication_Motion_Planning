@@ -1,0 +1,219 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b97f16a5-d3a9-4393-923f-3517e48c6f76</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Communication_Motion_Planning.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Communication_Motion_Planning</Name>
+    <RootNamespace>Communication_Motion_Planning</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="commuication_motion_planning_public_phase1.py" />
+    <Compile Include="Communication_Motion_Planning.py" />
+    <Compile Include="controller.py" />
+    <Compile Include="controller2.py" />
+    <Compile Include="env.py" />
+    <Compile Include="finalize_results.py" />
+    <Compile Include="grid.py" />
+    <Compile Include="HighLevel.py" />
+    <Compile Include="human.py" />
+    <Compile Include="measure.py" />
+    <Compile Include="replay_grid.py" />
+    <Compile Include="robot.py" />
+    <Compile Include="rrt.py" />
+    <Compile Include="rrt_unicycle_cbf_static_obstacle.py" />
+    <Compile Include="simulator.py" />
+    <Compile Include="table.py" />
+    <Compile Include="test_controller.py" />
+    <Compile Include="weight.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE" />
+    <Content Include="map1\map1_off_1" />
+    <Content Include="map1\map1_off_10" />
+    <Content Include="map1\map1_off_2" />
+    <Content Include="map1\map1_off_3" />
+    <Content Include="map1\map1_off_4" />
+    <Content Include="map1\map1_off_5" />
+    <Content Include="map1\map1_off_6" />
+    <Content Include="map1\map1_off_7" />
+    <Content Include="map1\map1_off_8" />
+    <Content Include="map1\map1_off_9" />
+    <Content Include="map1\map1_on_R_" />
+    <Content Include="map1\map1_on_R_1" />
+    <Content Include="map1\map1_on_R_10" />
+    <Content Include="map1\map1_on_R_2" />
+    <Content Include="map1\map1_on_R_3" />
+    <Content Include="map1\map1_on_R_4" />
+    <Content Include="map1\map1_on_R_5" />
+    <Content Include="map1\map1_on_R_6" />
+    <Content Include="map1\map1_on_R_7" />
+    <Content Include="map1\map1_on_R_8" />
+    <Content Include="map1\map1_on_R_9" />
+    <Content Include="map2\map2_off_1" />
+    <Content Include="map2\map2_off_10" />
+    <Content Include="map2\map2_off_2" />
+    <Content Include="map2\map2_off_3" />
+    <Content Include="map2\map2_off_4" />
+    <Content Include="map2\map2_off_5" />
+    <Content Include="map2\map2_off_6" />
+    <Content Include="map2\map2_off_7" />
+    <Content Include="map2\map2_off_8" />
+    <Content Include="map2\map2_off_9" />
+    <Content Include="map2\map2_on_R_" />
+    <Content Include="map2\map2_on_R_1" />
+    <Content Include="map2\map2_on_R_10" />
+    <Content Include="map2\map2_on_R_2" />
+    <Content Include="map2\map2_on_R_3" />
+    <Content Include="map2\map2_on_R_4" />
+    <Content Include="map2\map2_on_R_5" />
+    <Content Include="map2\map2_on_R_6" />
+    <Content Include="map2\map2_on_R_7" />
+    <Content Include="map2\map2_on_R_8" />
+    <Content Include="map2\map2_on_R_9" />
+    <Content Include="map3\map3_off_1" />
+    <Content Include="map3\map3_off_10" />
+    <Content Include="map3\map3_off_2" />
+    <Content Include="map3\map3_off_3" />
+    <Content Include="map3\map3_off_4" />
+    <Content Include="map3\map3_off_5" />
+    <Content Include="map3\map3_off_6" />
+    <Content Include="map3\map3_off_7" />
+    <Content Include="map3\map3_off_8" />
+    <Content Include="map3\map3_off_9" />
+    <Content Include="map3\map3_off_R_" />
+    <Content Include="map3\map3_on_R_1" />
+    <Content Include="map3\map3_on_R_10" />
+    <Content Include="map3\map3_on_R_2" />
+    <Content Include="map3\map3_on_R_3" />
+    <Content Include="map3\map3_on_R_4" />
+    <Content Include="map3\map3_on_R_5" />
+    <Content Include="map3\map3_on_R_6" />
+    <Content Include="map3\map3_on_R_7" />
+    <Content Include="map3\map3_on_R_8" />
+    <Content Include="map3\map3_on_R_9" />
+    <Content Include="map3\map3_on_R_D" />
+    <Content Include="map3\map3_on_R_ND" />
+    <Content Include="weights\map1\map1_w0.1_0" />
+    <Content Include="weights\map1\map1_w0.1_1" />
+    <Content Include="weights\map1\map1_w0.1_2" />
+    <Content Include="weights\map1\map1_w0.2_0" />
+    <Content Include="weights\map1\map1_w0.2_1" />
+    <Content Include="weights\map1\map1_w0.2_2" />
+    <Content Include="weights\map1\map1_w0.3_0" />
+    <Content Include="weights\map1\map1_w0.3_1" />
+    <Content Include="weights\map1\map1_w0.3_2" />
+    <Content Include="weights\map1\map1_w0.4_0" />
+    <Content Include="weights\map1\map1_w0.4_1" />
+    <Content Include="weights\map1\map1_w0.4_2" />
+    <Content Include="weights\map1\map1_w0.5_0" />
+    <Content Include="weights\map1\map1_w0.5_1" />
+    <Content Include="weights\map1\map1_w0.5_2" />
+    <Content Include="weights\map1\map1_w0.6_0" />
+    <Content Include="weights\map1\map1_w0.6_1" />
+    <Content Include="weights\map1\map1_w0.6_2" />
+    <Content Include="weights\map1\map1_w0.7_0" />
+    <Content Include="weights\map1\map1_w0.7_1" />
+    <Content Include="weights\map1\map1_w0.7_2" />
+    <Content Include="weights\map1\map1_w0.8_0" />
+    <Content Include="weights\map1\map1_w0.8_1" />
+    <Content Include="weights\map1\map1_w0.8_2" />
+    <Content Include="weights\map1\map1_w0.9_0" />
+    <Content Include="weights\map1\map1_w0.9_1" />
+    <Content Include="weights\map1\map1_w0.9_2" />
+    <Content Include="weights\map1\map1_w1.0_0" />
+    <Content Include="weights\map1\map1_w1.0_1" />
+    <Content Include="weights\map1\map1_w1.0_2" />
+    <Content Include="weights\map2\map2_w0.1_0" />
+    <Content Include="weights\map2\map2_w0.1_1" />
+    <Content Include="weights\map2\map2_w0.1_2" />
+    <Content Include="weights\map2\map2_w0.2_0" />
+    <Content Include="weights\map2\map2_w0.2_1" />
+    <Content Include="weights\map2\map2_w0.2_2" />
+    <Content Include="weights\map2\map2_w0.3_0" />
+    <Content Include="weights\map2\map2_w0.3_1" />
+    <Content Include="weights\map2\map2_w0.3_2" />
+    <Content Include="weights\map2\map2_w0.4_0" />
+    <Content Include="weights\map2\map2_w0.4_1" />
+    <Content Include="weights\map2\map2_w0.4_2" />
+    <Content Include="weights\map2\map2_w0.5_0" />
+    <Content Include="weights\map2\map2_w0.5_1" />
+    <Content Include="weights\map2\map2_w0.5_2" />
+    <Content Include="weights\map2\map2_w0.6_0" />
+    <Content Include="weights\map2\map2_w0.6_1" />
+    <Content Include="weights\map2\map2_w0.6_2" />
+    <Content Include="weights\map2\map2_w0.7_0" />
+    <Content Include="weights\map2\map2_w0.7_1" />
+    <Content Include="weights\map2\map2_w0.7_2" />
+    <Content Include="weights\map2\map2_w0.8_0" />
+    <Content Include="weights\map2\map2_w0.8_1" />
+    <Content Include="weights\map2\map2_w0.8_2" />
+    <Content Include="weights\map2\map2_w0.9_0" />
+    <Content Include="weights\map2\map2_w0.9_1" />
+    <Content Include="weights\map2\map2_w0.9_2" />
+    <Content Include="weights\map2\map2_w1.0_0" />
+    <Content Include="weights\map2\map2_w1.0_1" />
+    <Content Include="weights\map2\map2_w1.0_2" />
+    <Content Include="weights\map3\map3_w0.1_0" />
+    <Content Include="weights\map3\map3_w0.1_1" />
+    <Content Include="weights\map3\map3_w0.1_2" />
+    <Content Include="weights\map3\map3_w0.2_0" />
+    <Content Include="weights\map3\map3_w0.2_1" />
+    <Content Include="weights\map3\map3_w0.2_2" />
+    <Content Include="weights\map3\map3_w0.3_0" />
+    <Content Include="weights\map3\map3_w0.3_1" />
+    <Content Include="weights\map3\map3_w0.3_2" />
+    <Content Include="weights\map3\map3_w0.4_0" />
+    <Content Include="weights\map3\map3_w0.4_1" />
+    <Content Include="weights\map3\map3_w0.4_2" />
+    <Content Include="weights\map3\map3_w0.5_0" />
+    <Content Include="weights\map3\map3_w0.5_1" />
+    <Content Include="weights\map3\map3_w0.5_2" />
+    <Content Include="weights\map3\map3_w0.6_0" />
+    <Content Include="weights\map3\map3_w0.6_1" />
+    <Content Include="weights\map3\map3_w0.6_2" />
+    <Content Include="weights\map3\map3_w0.7_0" />
+    <Content Include="weights\map3\map3_w0.7_1" />
+    <Content Include="weights\map3\map3_w0.7_2" />
+    <Content Include="weights\map3\map3_w0.8_0" />
+    <Content Include="weights\map3\map3_w0.8_1" />
+    <Content Include="weights\map3\map3_w0.8_2" />
+    <Content Include="weights\map3\map3_w0.9_0" />
+    <Content Include="weights\map3\map3_w0.9_1" />
+    <Content Include="weights\map3\map3_w0.9_2" />
+    <Content Include="weights\map3\map3_w1.0_0" />
+    <Content Include="weights\map3\map3_w1.0_1" />
+    <Content Include="weights\map3\map3_w1.0_2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="map1\" />
+    <Folder Include="map2\" />
+    <Folder Include="map3\" />
+    <Folder Include="weights\" />
+    <Folder Include="weights\map1\" />
+    <Folder Include="weights\map2\" />
+    <Folder Include="weights\map3\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
